@@ -15,6 +15,11 @@
         "prepare:kovan": "mustache config/kovan.json template.yaml > subgraph.yaml",
         "prepare:mainnet": "mustache config/mainnet.json template.yaml > subgraph.yaml",
         "prepare:rinkeby": "mustache config/rinkeby.json template.yaml > subgraph.yaml",
-        "prepare:ropsten": "mustache config/ropsten.json template.yaml > subgraph.yaml"
+        "prepare:fantom": "mustache config/fantom.json template.yaml > subgraph.yaml",
+        "prepare:ropsten": "mustache config/ropsten.json template.yaml > subgraph.yaml",
+        "deploy:fantom-eu": "graph deploy beets-bar subgraph.yaml --ipfs  http://eu-node.beets-ftm-node.com:5001 --node  http://eu-node.beets-ftm-node.com:8020/",
+        "deploy:fantom-us": "graph deploy beets-bar subgraph.yaml --ipfs  http://us-node.beets-ftm-node.com:5001 --node  http://us-node.beets-ftm-node.com:8020/",
+        "deploy:fantom-canada": "graph deploy beets-bar subgraph.yaml --ipfs http://ca-node.beets-ftm-node.com:5001 --node  http://ca-node.beets-ftm-node.com:8020/",
+        "deploy:fantom-seoul": "graph deploy beets-bar subgraph.yaml --ipfs http://ap-node.beets-ftm-node.com:5001/ --node http://ap-node.beets-ftm-node.com:8020/"
     }
 }
